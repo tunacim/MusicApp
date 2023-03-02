@@ -15,14 +15,16 @@ return(
 
             <Text style={styles.artist}>{props.song.artist}</Text>
             <Text style={styles.year}>{props.song.year}</Text>
-
+            
             </View>
+            
             {props.song.isSoldOut &&(
             <View style={styles.soldContainer}>
                 <Text style={styles.soldTitle}>TÜKENDİ</Text>
             </View>
             )}
             </View>
+            <Text style={styles.album}> {props.song.album}</Text>
         </View>
     </View>
 )
